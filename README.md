@@ -1,34 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Assessment
 
-## Getting Started
+This assessment should take no more than 2 hours. We’re looking to get an understanding of how you code. We are not looking for a fully polished application that has no bugs.
 
-First, run the development server:
+## Assessment
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Please build a web app using [Create Next App](https://nextjs.org/docs/api-reference/create-next-app) which should have 2 pages:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Transactions**
+    - Should be a dynamic route based on an address hash. Please support Ethereum and Polygon addresses. You can use Etherscan or Polygonscan to find sample address(es).
+        - Should default to a sample address hash for this demo.
+    - Should list all the transactions of the address to show the `amount`, `timestamp` (formatted to human readable), `a link to see more details`, and any other details that you find relevant. If there are hundreds of transactions feel free to limit it to less than 100.
+    - Should show the address’ `current balance`.
+    - Should allow for the user to `sort the data` by amount or timestamp.
+- **Transaction details**
+    - Should be a dynamic route based on a transaction hash. Please support Ethereum and Polygon transactions. You can use Etherscan or Polygonscan to find sample hash(es).
+    - Should show the `transaction hash with a link` to a block explorer (Etherscan, Polygonscan, or others).
+    - Should show the `amount`, `timestamp` (formatted to human readable), `confirmation status` of the transaction (loading, successful, failed), the `transaction fee` if/when the transaction is successful, and any other details that you find relevant.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## **Requirements:**
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Please host the project on Github or another code sharing tool and deploy the app to Vercel, Netlify, or any other hosting solution of your choice.
+- Please style your application. It should be responsive and work on small and large screens (mobile and 4k).
